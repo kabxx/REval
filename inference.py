@@ -92,6 +92,7 @@ class VllmModel(Model):
                          gpu_memory_utilization=gpu_memory_utilization,
                          quantization=quantization,
                          dtype=dtype,
+                         enforce_eager=True,
                          )
         self.sampling_params = SamplingParams(temperature=temp,
                                               stop=['[/ANSWER]'],
